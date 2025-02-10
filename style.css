@@ -1,0 +1,113 @@
+/* بیک گراؤنڈ تصویر شامل کرنا */
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* بیک گراؤنڈ پر روشنی کم کرنے کے لیے */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* بلیک شیڈ ڈالنا */
+    z-index: -1;
+}
+
+/* نیویگیشن بار */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 5px;
+}
+
+/* مین کنٹینٹ */
+.content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+/* پروفائل پکچر */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid white;
+}
+
+/* بٹن */
+button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffaa00;
+}
+
+/* پروجیکٹس اور رابطہ سیکشن */
+section {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* فارم کی اسٹائلنگ */
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
